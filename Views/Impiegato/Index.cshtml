@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<form action="/" method="post">
+    <input type="text" name="nome" placeholder="nome" />
+    <input type="text" name="cognome" placeholder="cognome" />
+    <input type="text" name="codice fiscale" placeholder="codice fiscale" />
+    <br />
+
+    <label>Coniugato:</label><br>
+    <input type="radio" name="Si" value="Si"> Si<br>
+    <input type="radio" name="No" value="No"> No<br>
+
+    <label>Numero di figli a carico:</label>
+    <select name="figli">
+        <option value="0">Nessun figlio</option>
+        <option value="1">1 figlio</option>
+        <option value="2">2 figli</option>
+        <option value="3">3 figli</option>
+    </select>
+
+    <input type="submit" value="Invia" />
+</form>
